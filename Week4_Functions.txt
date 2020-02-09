@@ -1,0 +1,33 @@
+Week 4  Functions and Program Structure
+1. Function Definition (การนิยามฟังก์ชั่น)
+รูปแบบของการนิยามฟังก์ชั่น
+return-value-type   function-name( parameter-list )
+ {    
+      declarations
+       statement    
+       statement   
+        : 
+}
+
+2. Function Prototypes
+•	รูปแบบของฟังก์ชั่น prototype
+•	สามารถละชื่อตัวแปรได้ แต่ไม่สามารถละประเภทข้อมูลได้ 
+•	หากเราต้องการกําหนดฟังก์ชั่นที่ไม่ต้องการ parameter เราสามารถระบุ void ไว้แทน parameter-list
+
+3. Function Call - Call by Value
+•	การส่งผ่านค่าข้อมูล parameter จากผู้เรียกไปยังฟังก์ชั่นที่ถูกเรียกมีลักษณะทีเรียกว่า "pass by value"
+
+4. Standard Library Functions and Math Library Functions
+•	ฟังก์ชั่น printf, scanf และ getchar เป็นตัวอย่างของฟังก์ชั่นที่อยู่ใน Standard Library functions
+•	หากเราต้องการใช้ฟังก์ชั่นใน Math Library เราควรต้อง #include <math.h> ด้วย ตัวอย่าง ฟังก์ชั่นใน Math Library ได้แก่ sin(), cos(), sqrt(), log(), pow(), exp(), floor(), ceil(), fmod() ถ้าไม่ใส่ #include <math.h> ก็จะไม่แสดงผล
+
+5. Return Values
+•	ฟังก์ชั่นจะมีการส่งค่ากลับ หรือไม่ก็เป็นฟังก์ชั่นที่มี return type เป็น void 
+•	เราใช้ void เพื่อบอกคอมไพเลอร์ว่าฟังก์ชั่นนี้ไม่มีการส่งค่าใดๆ กลับไปยังผู้เรียก 
+•	หากเป็นฟังก์ชั่นที่มีการส่งค่ากลับ เราใช้คีย์เวิร์ด return เพื่อส่งกลับค่าข้อมูล
+
+6. Recursion (การเรียกซ้ำ)
+•	ฟังก์ชั่นสามารถเรียกใช้ตนเองได้ ซึงเรียกว่า recursion 
+•	เมื่อฟังก์ชั่นมีการเรียกใช้ตนเอง โปรแกรมจะสำเนาค่าตัวแปรต่างๆ ภายในฟังก์ชั่น 
+Local Variables   ตัวแปรที่ถูกประกาศไว้อยู่ภายใน block, ภายในตัวฟังก์ชั่น รวมถึงตัวแปรพารามิเตอร์ของฟังก์ชั่น จะเป็น ตัวแปร local ซึ่งสามารถถูกใช้งานได้เพียงภายในฟังก์ชั่นที่ถูกประกาศไว้
+Global Variables   ตัวแปรที่ถูกประกาศไว้อยู่ภายนอกฟังก์ชั่น
