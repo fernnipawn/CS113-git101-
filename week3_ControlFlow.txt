@@ -1,0 +1,58 @@
+week 3 Control Flow
+1. Statements and Blocks 
+•  expression กลายเป็น statement เมื่อถูกปิดท้ายด้วยเครื่องหมาย   semi-colon ; 
+•  x = 0 กลายเป็น x = 0; 
+•  เครื่องหมายปีกกา {} ใช้รวมส่วนของ declarations และ statements เข้าด้วยกันเป็น block ฟังก์ชัน, if, else, while, for มักใช้ block ในการรวม statement หลายอันเข้าด้วยกัน
+•  Null statement คือ statement ที่ปราศจากส่วนของ expression โดยเหลือเพียงเครื่องหมาย semi-colon ; เท่านั้น
+
+2    if-else      มักใช้คู่กัน     ifมักใช้ตอนที่เราต้องการสร้างเงื่อนไขต่าง
+if (expression)   
+     statement1 
+else  
+          statement2
+
+ตัวอย่าง       
+ if (n > 0)
+ if (a > b)  
+       z = a;
+else   
+        z = b;      
+
+3    Else-If 
+if (expression1)    
+        statement1 
+else if (expression2)    
+        statement2 
+else if (expression3)    
+        statement3 
+else if (expression4)    
+         statement4 
+else   
+          statement5
+
+
+ถ้า expression ตัวไหนมีค่าเป็นจริง statement ทีเกี่ยวข้องก็จะถูกทำงาน  
+
+4. Switch
+•  switch ใช้ในการตรวจสอบเงื่อนไขในลักษณะทีดูว่าค่าของ expression นั้น match เข้ากับค่าคงที่ ตัวใด หลังจากนั้นโปรแกรมจะกระโดดมาทำงาน statement นั้นภายใต้ค่าคงที่นั้นลง มาเรื่อยๆ จนกว่าจะเจอ break แล้วจึงหลุดออกจาก switch
+5. Loops - While และ For
+•  รูปแบบของ while
+while (expression)     
+     statement
+
+•  ถ้า expression เป็นจริง statement จะถูกทำงาน และถูกวนทำงานจนกว่า expression จะเป็นเท็จ
+•  รูปแบบของ for
+for (expr1; expr2; expr3)    
+       statement
+    
+                                                                                                                                              
+6. Loops - Do-While 
+do-while จะแตกต่างจาก while และ for ในแง่ทีการทดสอบเงื่อนไขจะอยู่ด้านล่างของลูป
+
+do          
+      statement 
+while (expression);
+
+7.   Break และ Continue      
+break และ continue จะช่วยให้สามารถควบคุมการวนซ้ำได้มากขึ้น break จะทำให้โปรแกรมหลุดออกมาจากลูป for, while และ do-while โดยทันที ทั้งนี้การหลุดจากลูปจะทำจากลูปวงในสุดที่ break อยู่
+
